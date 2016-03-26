@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libswscale
+includedir=/Users/Shum/workspace/code/iu/keyboard-ios/GifKeyboard/GifKeyboard/ffmpeg/ffmpeg-3.0
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 4.0.100
+Requires: libavutil >= 55.17.103
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lswscale -lm
+Cflags: -I${includedir}
